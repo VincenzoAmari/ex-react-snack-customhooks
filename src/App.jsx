@@ -15,15 +15,32 @@
 
 // snack2
 
-import useDate from "./useDate.jsx";
+// import useDate from "./useDate.jsx";
+
+// function App() {
+//   const currentDate = useDate();
+
+//   return (
+//     <div>
+//       <h1>Data e ora attuali:</h1>
+//       <p>{currentDate.toLocaleString()}</p>
+//     </div>
+//   );
+// }
+
+// export default App;
+
+// snack3
+
+import useCustomPointer from "./useCustomPointer";
 
 function App() {
-  const currentDate = useDate();
+  const customPointer = useCustomPointer("💩");
 
   return (
     <div>
-      <h1>Data e ora attuali:</h1>
-      <p>{currentDate.toLocaleString()}</p>
+      <h1>Sposta il mouse per vedere il cursore personalizzato!</h1>
+      {customPointer}
     </div>
   );
 }
